@@ -1,0 +1,10 @@
+p{
+    text-indent: 2em;
+    line-height: 2;
+}
+p.red{
+    color:red;
+}
+.red li{
+    color: #008c8c;
+}

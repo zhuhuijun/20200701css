@@ -1,0 +1,40 @@
+* {
+    color: red
+}
+
+[href] {
+    color: blue;
+}
+
+[href="//www.baidu.com"] {
+    color:#f0e;
+}
+/*  以baidu.com结尾*/
+[href $="baidu.com"] {
+    color:#f0e;
+}
+[class~="b"]{
+    font-size: 2em;
+}
+a:link{
+    color:green;
+}
+
+a:visited{
+    color: lightcoral;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: indigo;
+}
+
+span::before{
+    content: '<';
+    color: blue;
+}
+span::after{
+    content: ">";
+    color: green;
+}
