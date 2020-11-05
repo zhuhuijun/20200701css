@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color: red;
+        }
+        /* 选中的元素是子元素中第一个类型为li的，不一定是第一个元素 */
+        li:first-of-type{
+            color: blue;
+        }
+        li:nth-child(even){
+            color: red;
+        }
+        li:nth-child(2n+1){
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <p>lorem</p>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Tenetur laborum id veniam consequuntur?</li>
+            <li>Id, dolores. Itaque, libero est?</li>
+            <li>Id ad earum deserunt quisquam.</li>
+            <li>Iusto alias explicabo odio impedit.</li>
+            <li>Eius inventore perferendis vero explicabo!</li>
+            <li>Magni animi quisquam commodi et?</li>
+            <li>Aspernatur expedita commodi doloremque corporis.</li>
+            <li>Corporis repellat optio eius illum.</li>
+            <li>Ratione deserunt ea fugit quisquam?</li>
+        </ul>
+    </div>
+</body>
+</html>

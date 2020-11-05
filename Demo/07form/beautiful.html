@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radio{
+            width: 12px;
+            height: 12px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .radio.cheked{
+            border-color: #008c8c;
+        }
+        .radio.checked::after{
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #008c8c;     
+            margin-top: 3.5px;
+            margin-left: 3.5px;       
+            border-radius: 50%;
+        }
+
+        .radio-item .radio2{
+            width: 12px;
+            height: 12px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .radio-item input{
+            display: none;
+        }
+        .radio-item input:checked+.radio2{
+            border-color: #008c8c;
+        }
+        .radio-item input:checked~span{
+            color:#008c8c;
+        }
+        .radio-item input:checked+.radio2::after{
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #008c8c;     
+            margin-top: 3.5px;
+            margin-left: 3.5px;       
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="radio checked"></div>
+    <div>
+        请选择性别:
+        <label  class="radio-item">
+            <input name="gender" type="radio"> 
+            <span class="radio2"></span>
+            <span>男</span>
+        </label>
+        <label  class="radio-item">
+            <input name="gender" type="radio"> 
+            <span class="radio2"></span>
+            <span>女</span>
+        </label>
+    </div>
+</body>
+</html>

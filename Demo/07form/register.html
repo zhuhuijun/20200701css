@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.title').click(function(){
+                $("#ullic").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="regis">
+        <h2>
+            <span>注册</span>
+        </h2>
+        <div class="form-area">
+            <div class="form-item haserror">
+                <input type="text" placeholder="昵称">
+                <div class="error">
+                    该昵称已被别人占用
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="password" placeholder="密码（6-16个字符组成，区分大小写）">
+            </div>
+            <div class="form-item">
+                <div class="select clearfix">
+                    <div class="select-item">
+                        <div class="title">
+                            中国大陆
+                        </div>
+                        <ul id="ullic">
+                            <li>Lorem ipsum </li>
+                            <li class="active">中国大陆</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, deserunt!</li>
+                            <li>Laborum labore, facere molestias esse voluptatem asperiores illo veritatis voluptatum.</li>
+                            <li>Error placeat veniam consequatur molestiae modi quidem atque, beatae voluptates!</li>
+                            <li>Temporibus corporis illo aspernatur ad eum veniam, facilis natus ab.</li>
+                            <li>Voluptatum nam voluptates dolorem, nulla nesciunt labore tempore inventore harum?</li>
+                            <li>Maxime dolorum ut aut sunt voluptatum asperiores voluptates consequatur recusandae?</li>
+                            <li>Molestias magni temporibus aperiam dolorum nostrum rem ducimus est fugiat?</li>
+                            <li>Alias nam consequuntur ut eos, magni incidunt odio esse explicabo!</li>
+                            <li>Dolore culpa nobis corrupti, error cupiditate reprehenderit velit aliquam sit?</li>
+                            <li>Repellendus aspernatur est nesciunt itaque et eveniet nobis reprehenderit at.</li>
+                            <li>Magni, sapiente. Blanditiis temporibus facilis, facere ea officiis corrupti numquam.</li>
+                            <li>Aut in fugit consectetur nesciunt eum ipsa labore, dolore minus?</li>
+                            <li>Maxime autem quia sapiente, et nulla dolor? Velit, exercitationem quidem!</li>
+                            <li>Perspiciatis nostrum dolorem, culpa esse corporis itaque molestiae atque dolor.</li>
+                            <li>Libero iure illo blanditiis, veniam in incidunt corporis quo nobis!</li>
+                            <li>Minus magnam vitae asperiores impedit rem ipsum repudiandae id quisquam.</li>
+                            <li>Unde aliquam eligendi magni sequi ea sapiente velit ab laudantium?</li>
+                            <li>Obcaecati quis qui deserunt nobis ratione ad dolore recusandae eveniet!</li>
+                            <li>Vel deleniti sit debitis quo aliquam, repudiandae impedit natus alias.</li>
+                            <li>Doloremque expedita distinctio fuga repellendus. Eligendi officia itaque laboriosam. Repellat!</li>
+                        </ul>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="填写常用的手机号">
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="text" class="input-sn" placeholder="请输入短信验证码">
+                <button type="button" class="btn-sncode">点击获取</button>
+            </div>
+            <div class="readme">
+                <label >
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                    <span>我已同意<a href="#">《哔哩哔哩弹幕网用户使用协议》</a>和<a href="#">《哔哩哔哩隐私政策》</a></span>
+                </label>
+            </div>
+            <div class="form-item">
+                <button disabled class="fill">注册</button>
+            </div>
+            <div class="tip readme">
+                <a href="#">已有账号，直接登录&gt;</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
