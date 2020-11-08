@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            background: gray;
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+        .container{
+            background: lightblue;
+            /* position: absolute; */
+            /* float: left; */
+            /* 副作用最小overflow:hidden */
+            overflow: hidden;
+        }
+        .item{
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <item>1</item>
+        </div>
+        <div class="item">
+            <item>2</item>
+        </div>
+        <div class="item">
+            <item>3</item>
+        </div>
+        <div class="item">
+            <item>4</item>
+        </div>
+        <div class="item">
+            <item>5</item>
+        </div>
+        <div class="item">
+            <item>6</item>
+        </div>
+        <div class="item">
+            <item>7</item>
+        </div>
+        <div class="item">
+            <item>8</item>
+        </div>
+        <div class="item">
+            <item>9</item>
+        </div>
+        <div class="item">
+            <item>10</item>
+        </div>
+        <div class="item">
+            <item>11</item>
+        </div>
+        <div class="item">
+            <item>12</item>
+        </div>
+        <div class="item">
+            <item>13</item>
+        </div>
+        <div class="item">
+            <item>14</item>
+        </div>
+        <div class="item">
+            <item>15</item>
+        </div>
+        <div class="item">
+            <item>16</item>
+        </div>
+        <div class="item">
+            <item>17</item>
+        </div>
+        <div class="item">
+            <item>18</item>
+        </div>
+        <div class="item">
+            <item>19</item>
+        </div>
+        <div class="item">
+            <item>20</item>
+        </div>
+    </div>
+</body>
+</html>

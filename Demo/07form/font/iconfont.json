@@ -1,0 +1,51 @@
+{
+  "id": "2140413",
+  "name": "myvuee",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "myvuee",
+  "glyphs": [
+    {
+      "icon_id": "608276",
+      "name": "地图",
+      "font_class": "ditumap31",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "8288852",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e84f",
+      "unicode_decimal": 59471
+    },
+    {
+      "icon_id": "18018809",
+      "name": "activity",
+      "font_class": "activity",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18018810",
+      "name": "archive",
+      "font_class": "archive",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "4448577",
+      "name": "safe",
+      "font_class": "safe",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "11474220",
+      "name": "bussiness-man",
+      "font_class": "bussiness-man",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    }
+  ]
+}
