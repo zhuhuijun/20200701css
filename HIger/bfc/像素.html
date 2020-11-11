@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* line-height: 30px; */
+            /* 字体大小的2倍，先计算像素值，然后再继承，div的字体大小继承html，基准字号16px */
+            /* line-height: 2em; */
+            /* 先继承，后计算 ，多行文本尽量不要加单位*/
+            line-height: 2;
+        }
+        .p1{
+            font-size: 40px;
+        }
+        .p2{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="p1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam mollitia hic temporibus dolor vero quisquam, id velit reprehenderit officia tenetur minima facilis itaque repellendus repellat, accusamus, iste saepe fuga dicta!
+        </p>
+        <p class="p2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur aspernatur magnam, odio quaerat consectetur autem vel rerum sit est vero fuga optio accusamus quisquam temporibus. Fugiat maxime accusantium repellat!
+        </p>
+    </div>
+</body>
+</html>
