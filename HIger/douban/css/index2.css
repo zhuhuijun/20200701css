@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "common.css";
+@import "//at.alicdn.com/t/font_2220160_78ftndqmor4.css";
+/* 首页通用样式开始 */
+.container{
+    width: 950px;
+    margin:0 auto;
+    background: lightblue;
+}
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 首页通用样式结束 */
+
+/* 页头开始header */
+.header{
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+/* .header .logo,.header .search,.header .menu{
+    height: 30px; 
+    border: 2px solid red; 
+} */
+.header .logo a{
+    width: 154px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    display: block;
+    background: url('../img/logo.png') no-repeat;
+}
+/* 页头结束header */

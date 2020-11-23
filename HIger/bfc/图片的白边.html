@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片的白边</title>
+    <style>
+        .container {
+            border: 2px solid;
+            background: red;
+            /* 有副作用 */
+            /* font-size: 0; */
+        }
+        .container img{
+            display: block;
+        }
+        .content{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><img src="./imgs/aa.jpg" alt=""></div>
+    <div class="content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, atque.
+    </div>
+</body>
+
+</html>
