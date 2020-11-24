@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/zepto.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
 </head>
 
 <body>
@@ -14,12 +16,12 @@
         <div class="login">
             <!-- 切换菜单 -->
             <div class="switch-menu clearfix">
-                <span class="fleft selected">短信登录/注册</span>
-                <span class="fright">密码登录</span>
+                <span id="smslogin" class="fleft ">短信登录/注册</span>
+                <span id="pwdlogin" class="fright selected">密码登录</span>
             </div>
             <div class="form">
                 <!-- 短信 -->
-                <div>
+                <div id="smsloginform" class="hidden">
                     <div class="form-item">
                         <p class="txt">
                             请仔细阅读<a href="">豆瓣使用协议、隐私政策</a>
@@ -72,9 +74,38 @@
                     <div class="form-item">
                         <button class="btn">登录豆瓣</button>
                     </div>
+                    <div class="form-item clearfix tip">
+                        <label class="fleft">
+                            <input type="checkbox">下次自动登录
+                        </label>
+                        <label class="fright">
+                            <a href="">收不到验证码</a>
+                        </label>
+                    </div>
                 </div>
-                <!-- 密码 -->
-                <div></div>
+                <!-- 找回密码 -->
+                <div id="pwdloginform">
+                    <div class="form-item tip clearfix">
+                        <a href="" class="fright">找回密码</a>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" placeholder="手机号/邮箱">
+                    </div>
+                    <div class="form-item">
+                        <input type="password" placeholder="密码">
+                    </div>
+                    <div class="form-item">
+                        <button disabled class="btn">登录豆瓣</button>
+                    </div>
+                    <div class="form-item clearfix tip">
+                        <label class="fleft">
+                            <input type="checkbox">下次自动登录
+                        </label>
+                        <label class="fright">
+                            <a href="">收不到验证码</a>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 扫码 -->

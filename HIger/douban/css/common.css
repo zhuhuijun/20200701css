@@ -25,3 +25,7 @@ body{
     text-align: center;
     border-radius: 4px;
 }
+.btn:disabled{
+    background: rgba(68, 189, 86, .5);
+    cursor: not-allowed;
+}

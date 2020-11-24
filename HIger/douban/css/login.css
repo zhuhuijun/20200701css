@@ -154,3 +154,8 @@ input[type='text'].more-text-indent {
 .country-code .chrose-area .center ul li.selected .iconfont{
     margin-left: 10px;
 }
+/* 收不到验证码 */
+.container .form-item .tip{
+    font-size: 12px;
+    color: #ccc;
+}
