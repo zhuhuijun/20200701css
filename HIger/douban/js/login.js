@@ -16,5 +16,8 @@ $(function () {
         $("#pwdlogin").addClass("selected")
         $("#smslogin").removeClass("selected")
     })
+    $('.country-code').click(function(){
+        $('.chrose-area').toggle();
+    })
 });
 
