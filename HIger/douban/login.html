@@ -16,12 +16,12 @@
         <div class="login">
             <!-- 切换菜单 -->
             <div class="switch-menu clearfix">
-                <span id="smslogin" class="fleft ">短信登录/注册</span>
-                <span id="pwdlogin" class="fright selected">密码登录</span>
+                <span id="smslogin" class="fleft  selected">短信登录/注册</span>
+                <span id="pwdlogin" class="fright">密码登录</span>
             </div>
             <div class="form">
                 <!-- 短信 -->
-                <div id="smsloginform" class="hidden">
+                <div id="smsloginform" >
                     <div class="form-item">
                         <p class="txt">
                             请仔细阅读<a href="">豆瓣使用协议、隐私政策</a>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="form-item clearfix tip">
                         <label class="fleft">
-                            <input type="checkbox">下次自动登录
+                            <input type="checkbox"> <span class="checkbox"></span><span>下次自动登录</span>
                         </label>
                         <label class="fright">
                             <a href="">收不到验证码</a>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <!-- 找回密码 -->
-                <div id="pwdloginform">
+                <div id="pwdloginform" class="hidden">
                     <div class="form-item tip clearfix">
                         <a href="" class="fright">找回密码</a>
                     </div>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="form-item clearfix tip">
                         <label class="fleft">
-                            <input type="checkbox">下次自动登录
+                            <input type="checkbox"> <span class="checkbox"></span><span>下次自动登录</span>
                         </label>
                         <label class="fright">
                             <a href="">收不到验证码</a>

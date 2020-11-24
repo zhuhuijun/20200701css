@@ -159,3 +159,30 @@ input[type='text'].more-text-indent {
     font-size: 12px;
     color: #ccc;
 }
+.container .form .form-item .checkbox{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+    margin-bottom: -2px;
+    border: 1px solid #dcdef6;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+.container .form .form-item input[type='checkbox']{
+    display: none;
+}
+.container .form .form-item input:checked+.checkbox{
+    border-color: #00a1d6;
+}
+.container .form .form-item input:checked+.checkbox::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #00a1d6;
+    border-radius: 2px;
+    margin-left: 2.5px;
+    margin-top: 2.5px;
+}
