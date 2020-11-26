@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <!-- 短信登录，注册，密码登录 -->
-        <div class="login hidden">
+        <div class="login " id="loginform">
             <!-- 切换菜单 -->
             <div class="switch-menu clearfix">
                 <span id="smslogin" class="fleft  selected">短信登录/注册</span>
@@ -135,7 +135,7 @@
             </div>
         </div>
         <!-- 扫码 -->
-        <div class="qrcode">
+        <div class="qrcode hidden" id="qrcodeform"> 
             <div class="title">
                 二维码登录
             </div>
@@ -145,6 +145,13 @@
             <div class="tip">
                 <span>请打开豆瓣客户端扫一扫</span>
             </div>
+        </div>
+        <div class="change">
+            <i class="icon icon-qrcode" id="cc"></i>
+            <!-- <i class="icon icon-pc"></i> -->
+        </div> 
+        <div class="pointer hidden">
+            扫码登录
         </div>
     </div>
 </body>

@@ -29,6 +29,8 @@ input[type='text'].more-text-indent {
     line-height: 2;
     padding: 30px 10px 10px 10px;
     color: #9b9b9b;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .container .login .switch-menu {
@@ -37,7 +39,7 @@ input[type='text'].more-text-indent {
 }
 
 .container .login .switch-menu span {
-    width: 150px;
+    width: 50%;
     text-align: center;
     cursor: pointer;
 }
@@ -74,12 +76,13 @@ input[type='text'].more-text-indent {
     font-size: 12px;
 }
 
-.container .login .form .form-item .ab-right{
+.container .login .form .form-item .ab-right {
     position: absolute;
     right: 7px;
     top: 5px;
 }
-.container .login .form .form-item .btn{
+
+.container .login .form .form-item .btn {
     width: 100%;
     height: 34px;
     font-size: 15px;
@@ -123,43 +126,53 @@ input[type='text'].more-text-indent {
     font-weight: bold;
     cursor: auto;
 }
-.container .login .form .form-item .country-code .chrose-area .center ul{
+
+.container .login .form .form-item .country-code .chrose-area .center ul {
     height: 180px;
     overflow: auto;
     padding: 10px;
     box-sizing: border-box;
     font-size: 14px;
 }
-.container .login .form .form-item .country-code .chrose-area .center ul li{ 
+
+.container .login .form .form-item .country-code .chrose-area .center ul li {
     height: 38px;
     line-height: 38px;
     border-top: 1px solid #e5e5e5;
     /* border-bottom: 1px solid #e5e5e5; */
     /* margin-top: -1px; */
 }
-.container .login .form .form-item .country-code .chrose-area .center ul li:last-child{ 
+
+.container .login .form .form-item .country-code .chrose-area .center ul li:last-child {
     border-bottom: 1px solid #e5e5e5;
 }
-.country-code .chrose-area .center ul li .fright{
+
+.country-code .chrose-area .center ul li .fright {
     color: #aaa;
     font-weight: normal;
 }
-.container .login .form .form-item .country-code .chrose-area .center ul li.selected{
+
+.container .login .form .form-item .country-code .chrose-area .center ul li.selected {
     color: #42bd56;
     cursor: pointer;
 }
-.country-code .chrose-area .center ul li.selected .fright{
-    color:inherit;
+
+.country-code .chrose-area .center ul li.selected .fright {
+    color: inherit;
 }
-.country-code .chrose-area .center ul li.selected .iconfont{
+
+.country-code .chrose-area .center ul li.selected .iconfont {
     margin-left: 10px;
 }
+
 /* 收不到验证码 */
-.container .form-item .tip{
+
+.container .form-item .tip {
     font-size: 12px;
     color: #ccc;
 }
-.container .form .form-item .checkbox{
+
+.container .form .form-item .checkbox {
     display: inline-block;
     height: 16px;
     width: 16px;
@@ -168,15 +181,17 @@ input[type='text'].more-text-indent {
     border: 1px solid #dcdef6;
     border-radius: 4px;
     box-sizing: border-box;
-
 }
-.container .form .form-item input[type='checkbox']{
+
+.container .form .form-item input[type='checkbox'] {
     display: none;
 }
-.container .form .form-item input:checked+.checkbox{
+
+.container .form .form-item input:checked+.checkbox {
     border-color: #00a1d6;
 }
-.container .form .form-item input:checked+.checkbox::after{
+
+.container .form .form-item input:checked+.checkbox::after {
     content: "";
     display: block;
     width: 8px;
@@ -186,43 +201,50 @@ input[type='text'].more-text-indent {
     margin-left: 2.5px;
     margin-top: 2.5px;
 }
-.container .login .bottom{
+
+.container .login .bottom {
     border-top: 1px solid #ddd;
 }
-.container .login .bottom .msg{
+
+.container .login .bottom .msg {
     font-size: 11px;
     vertical-align: 2px;
 }
-.container .login .bottom .iconfont{
+
+.container .login .bottom .iconfont {
     margin-left: 12px;
 }
 
-.container .login .bottom .iconfont.iconweixin{
+.container .login .bottom .iconfont.iconweixin {
     color: #34950e;
 }
 
-.container .login .bottom .iconfont.iconweibo11{
+.container .login .bottom .iconfont.iconweibo11 {
     color: #ea5d5c;
 }
-.container .qrcode{
+
+.container .qrcode {
     font-size: 13px;
 }
 
-.container .qrcode .title{
+.container .qrcode .title {
     color: #333;
     border-bottom: 1px solid #ececec;
     cursor: pointer;
 }
-.container .qrcode .code{
+
+.container .qrcode .code {
     text-align: center;
     font-size: 0;
     margin-top: 20px;
 }
-.container .qrcode .code img{
+
+.container .qrcode .code img {
     width: 170px;
     height: 170px;
 }
-.container .qrcode .tip{
+
+.container .qrcode .tip {
     width: 183px;
     height: 25px;
     line-height: 25px;
@@ -232,4 +254,43 @@ input[type='text'].more-text-indent {
     text-align: center;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+.container .change {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.container .change .icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.container .change .icon.icon-qrcode {
+    background: url("../img/qr2.png") no-repeat left top/100% 100%;
+}
+
+.container .change .icon.icon-pc {
+    background: url("../img/qr1.png") no-repeat left top/100% 100%;
+}
+.container .change:hover+.pointer{
+    display: block;
+}
+.container .pointer {
+    position: absolute;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid rgba(66, 189, 86, .3);
+    background: #f5faf9;
+    color: #666;
+    font-size: 13px;
+    right: 50px;
+    top: 10px;
+    padding: 0 5px;
+    border-radius: 4px;
 }

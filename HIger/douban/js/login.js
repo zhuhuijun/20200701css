@@ -19,5 +19,18 @@ $(function () {
     $('.country-code').click(function(){
         $('.chrose-area').toggle();
     })
+    $("#cc").click(function(){
+        if($(this).hasClass('icon-qrcode')){
+            $(this).removeClass('icon-qrcode');
+            $(this).addClass('icon-pc');
+            $("#qrcodeform").show();
+            $("#loginform").hide();
+        }else{
+            $(this).removeClass('icon-pc');
+            $(this).addClass('icon-qrcode');
+            $("#loginform").show();
+            $("#qrcodeform").hide();
+        }
+    });
 });
 

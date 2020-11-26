@@ -89,3 +89,13 @@ button{
     width: 44px;
 }
 /* 页头结束header */
+iframe{
+    width: 320px;
+    height: 320px;
+}
+/* 横幅开始 */
+.banner{
+    height: 304px;
+    background: url('../img/banner.jpg') no-repeat 120px top/auto 100% #edf4ed;
+}
+/* 横幅结束 */
