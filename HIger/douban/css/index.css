@@ -2,50 +2,58 @@
 @import "reset.css";
 @import "common.css";
 /* 首页通用样式开始 */
-.container{
+
+.container {
     width: 950px;
-    margin:0 auto;
+    margin: 0 auto;
     /* background: lightblue; */
 }
 
-button{
+button {
     cursor: pointer;
 }
+
 /* 首页通用样式结束 */
 
 /* 页头开始header */
-.header{
+
+.header {
     height: 90px;
     padding-top: 30px;
     box-sizing: border-box;
 }
-.header .logo a{
+
+.header .logo a {
     width: 154px;
     height: 30px;
     display: block;
     background: url('../img/logo.png') no-repeat left top/100%;
 }
-.header .logo a span{
+
+.header .logo a span {
     display: none;
 }
 
-.header .search{
+.header .search {
     width: 270px;
     height: 30px;
     border: 1px solid #c3c3c3;
     margin-left: 20px;
     position: relative;
 }
-.header .search .txt{
+
+.header .search .txt {
     height: 20px;
     width: 240px;
     padding: 5px;
     font-size: 13px;
 }
-.header .search .txt::placeholder{
+
+.header .search .txt::placeholder {
     color: #ccc;
 }
-.header .search button{
+
+.header .search button {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -53,49 +61,87 @@ button{
     right: 0;
     color: #c3c3c3;
 }
-.header .menu{
+
+.header .menu {
     margin-top: 6px;
 }
-.header .menu a{
+
+.header .menu a {
     background: url('../img/menu.png') no-repeat left top/463px 20px;
     width: 40px;
     height: 20px;
     float: left;
     margin-left: 20px;
 }
-.header .menu .menu-book{
+
+.header .menu .menu-book {
     background-position: 0 0;
 }
-.header .menu .menu-movie{
+
+.header .menu .menu-movie {
     background-position: -60px 0;
 }
-.header .menu .menu-music{
+
+.header .menu .menu-music {
     background-position: -120px 0;
 }
-.header .menu .menu-city{
+
+.header .menu .menu-city {
     background-position: -180px 0;
 }
-.header .menu .menu-group{
+
+.header .menu .menu-group {
     background-position: -240px 0;
 }
-.header .menu .menu-read{
+
+.header .menu .menu-read {
     background-position: -300px 0;
 }
-.header .menu .menu-fm{
+
+.header .menu .menu-fm {
     background-position: -360px 0;
 }
-.header .menu .menu-time{
+
+.header .menu .menu-time {
     background-position: -420px 0;
     width: 44px;
 }
+
 /* 页头结束header */
-iframe{
-    width: 320px;
-    height: 320px;
-}
+
 /* 横幅开始 */
-.banner{
-    height: 304px;
+
+.banner {
+    height: 305px;
     background: url('../img/banner.jpg') no-repeat 120px top/auto 100% #edf4ed;
+}
+
+.banner .container .loginarea {
+    width: 305px;
+    height: 305px;
+}
+
+.banner .container .slogan {
+    margin-top: 100px;
+    margin-right: 32px;
+}
+
+.banner .container .slogan .title {
+    font-size: 25px;
+    color: #111;
+}
+
+.banner .container .slogan .title span{
+    margin-left: 10px;
+}
+.banner .container .slogan .download{
+    margin-top:25px;
+}
+.banner .container .slogan .download .btn{
+    height: 30px;
+    width: 115px;
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 2px;
 }
 /* 横幅结束 */
