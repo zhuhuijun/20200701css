@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import "reset.css";
 @import "common.css";
+body {
+    line-height: 2;
+}
+
 /* 首页通用样式开始 */
 
 .container {
@@ -11,6 +15,96 @@
 
 button {
     cursor: pointer;
+}
+
+ul {
+    word-break: break-all;
+}
+
+a {
+    color: #37a;
+}
+
+a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+    background: #f9a;
+}
+
+.section {
+    padding: 35px 0;
+}
+
+.section:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+.aside-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.aside-left .title {
+    font-size: 25px;
+}
+
+.aside-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.dark-color {
+    color: #494949;
+}
+
+.main {
+    /* 创建bfc */
+    overflow: hidden;
+}
+
+.adv img {
+    width: 100%;
+    display: block;
+}
+
+.adv-tag::after {
+    content: "广告";
+    color: #c9c9c9;
+    font-size: 12px;
+}
+
+.more-title {
+    margin: 12px 0;
+}
+
+.more-title .title {
+    /* 行盒 */
+    display: inline;
+    color: #072;
+    font-size: 15px;
+}
+
+.more-title .title::after {
+    content: " · · · · · · ";
+}
+
+.more-title .title-href {
+    font-size: 12px;
+}
+
+.more-title .title-href::before {
+    content: '(';
+}
+
+.more-title .title-href::after {
+    content: ')';
 }
 
 /* 首页通用样式结束 */
@@ -40,6 +134,7 @@ button {
     border: 1px solid #c3c3c3;
     margin-left: 20px;
     position: relative;
+    line-height: normal;
 }
 
 .header .search .txt {
@@ -113,7 +208,7 @@ button {
 
 .banner {
     height: 305px;
-    background: url('../img/banner.jpg') no-repeat 120px top/auto 100% #edf4ed;
+    background: url('../img/banner.jpg') no-repeat 20px top/auto 100% #edf4ed;
 }
 
 .banner .container .loginarea {
@@ -131,17 +226,133 @@ button {
     color: #111;
 }
 
-.banner .container .slogan .title span{
+.banner .container .slogan .title span {
     margin-left: 10px;
 }
-.banner .container .slogan .download{
-    margin-top:25px;
+
+.banner .container .slogan .download {
+    margin-top: 25px;
 }
-.banner .container .slogan .download .btn{
+
+.banner .container .slogan .download .btn {
     height: 30px;
     width: 115px;
     font-size: 12px;
     line-height: 30px;
     border-radius: 2px;
 }
+
+.banner .container .slogan .download .qrcode {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.banner .container .slogan .download .qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .container .qrcode-img {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.banner .container .qrcode-img p {
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.banner .container .slogan .download .qrcode:hover .qrcode-img {
+    display: block;
+}
+
 /* 横幅结束 */
+
+/* 热门区开始 */
+
+.hot-list {
+    line-height: 1.5;
+}
+
+.hot-list li {
+    margin-bottom: 15px;
+}
+
+.hot-list li .title {
+    font-size: 14px;
+}
+
+.hot-list li .desc {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.hot-list li .desc span:nth-child(n+1) {
+    margin-right: 4px;
+}
+
+.hot-main .fleft {
+    width: 350px;
+}
+
+.hot-main ul::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.hot-main .fleft ul {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.hot-main .fleft li {
+    display: inline-block;
+    width: 170px;
+    font-size: 12px;
+    margin: 10px 0;
+    vertical-align: top;
+}
+
+.hot-main .fleft li .img img {
+    width: 100%;
+    display: block;
+}
+
+.hot-main .fleft li .words span {
+    color: #999;
+}
+
+.hot-main .fright {
+    width: 275px;
+    font-size: 12px;
+}
+
+.hot-main .fright li {
+    margin-bottom: 12px;
+}
+
+.hot-main .fright li .title {
+    color: #999;
+}
+
+.hot-main .fright li .desc {
+    color: #666;
+}
+
+/* 热门区结束 */
+/* 豆瓣时间开始 */
+/* 豆瓣时间结束 */
