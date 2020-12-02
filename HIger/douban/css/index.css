@@ -106,15 +106,42 @@ a:active {
 .more-title .title-href::after {
     content: ')';
 }
-.item-list li{
+
+.item-list li {
     display: inline-block;
     vertical-align: top;
     line-height: 1.5;
 }
-.item-list li .img img{
+
+.item-list li .img img {
     width: 100%;
     display: block;
 }
+
+.left-menu {
+    font-size: 14px;
+}
+
+.left-menu a.new {
+    position: relative;
+}
+
+.left-menu a.new::after {
+    content: "";
+    display: block;
+    background: url('../img/new_menu.gif') no-repeat;
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    top: 0;
+    right: -17px;
+}
+
+.right-menu-list li {
+    float: left;
+    font-size: 12px;
+}
+
 /* 首页通用样式结束 */
 
 /* 页头开始header */
@@ -410,22 +437,25 @@ a:active {
     font-size: 13px;
     text-align: left;
 }
-.video-main li:nth-child(3n){
+
+.video-main li:nth-child(3n) {
     margin-right: 0;
 }
 
-.video-main li .img img{
+.video-main li .img img {
     width: 100%;
     display: block;
 }
+
 .video-main .item-list li .img {
     position: relative;
 }
-.video-main .item-list li .img::before{
+
+.video-main .item-list li .img::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
     color: #fff;
     text-align: center;
     font-size: 35px;
@@ -433,3 +463,11 @@ a:active {
 }
 
 /* 豆瓣视频结束 */
+
+/* 豆瓣电影开始 */
+.movie-area .right-menu-list li{
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+}
+/* 豆瓣电影结束 */
