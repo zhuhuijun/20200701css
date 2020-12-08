@@ -932,7 +932,44 @@ a:active {
     color: #fff;
 }
 
+.samecity-area .item-list li {
+    width: 248px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.samecity-area .item-list li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.samecity-area .item-list li .img {
+    margin-right: 10px;
+}
+
+.samecity-area .item-list li .words {
+    overflow: hidden;
+}
+
+.samecity-area .item-list li .words a {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.samecity-area .item-list li .words span {
+    font-size: 12px;
+    display: block;
+    color: #666;
+    line-height: 1.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* 同城结束 */
+
 /* 豆品开始 */
 
 /* 豆品结束 */
