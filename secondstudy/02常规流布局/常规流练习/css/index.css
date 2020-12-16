@@ -1,0 +1,58 @@
+body {
+    background: #4d4a40;
+    padding: 20px 0;
+    line-height: 2;
+    min-width: 980px;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container .header {
+    background: #267890;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #144141;
+    margin: 0 -30px;
+}
+
+.container .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container .header .address {
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-bottom: 26px;
+    margin-top: 10px;
+}
+
+.container .header .address a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .header .address a:hover {
+    color: #fff;
+}
+
+.container section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container section p {
+    margin: 1em 0;
+}
+
+.container section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+}
