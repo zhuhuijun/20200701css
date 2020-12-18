@@ -972,4 +972,47 @@ a:active {
 
 /* 豆品开始 */
 
+.footer {
+    font-size: 12px;
+    line-height: 2;
+    color: #999;
+}
+
+.footer .container {
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.footer .fleft img {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.footer .fleft .biaoshi {
+    vertical-align: middle;
+}
+
+.footer .fleft, .footer .fright {
+    width: 50%;
+}
+
+.footer .fright .menu a {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.footer .fright .menu a:first-child {
+    margin-left: 0;
+}
+
+.footer .adv {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.footer .fright .adv img {
+    display: block;
+}
+
 /* 豆品结束 */
