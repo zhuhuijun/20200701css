@@ -1,0 +1,38 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal .container {
+    position: absolute;
+    width: 404px;
+    height: 512px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.modal .container .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background: red;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}

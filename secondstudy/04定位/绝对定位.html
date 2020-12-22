@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            height: 500px;
+            width: 1000px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+
+        .second {
+            height: 400px;
+            width: 800px;
+            padding: 30px;
+            border: 2px solid green;
+            position: relative;
+        }
+        .third{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="second">
+            <div class="second third"></div>
+        </div>
+    </div>
+</body>
+
+</html>

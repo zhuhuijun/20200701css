@@ -1,0 +1,21 @@
+.pager {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.pager li {
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    padding: 5px 10px;
+    margin: 0 3px;
+}
+
+.pager li:hover {
+    border-color: #ef4238;
+}
+
+.pager li.select {
+    background: #ef4238;
+    color: #fff;
+    border: none;
+}

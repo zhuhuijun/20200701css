@@ -1,0 +1,13 @@
+.header {
+    background: #e3e4e5;
+    color: #999;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .topnav>li {
+    float: left;
+    margin: 0 20px;
+    background: red;
+    padding: 0 8px;
+}
