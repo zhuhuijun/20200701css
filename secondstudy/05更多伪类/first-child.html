@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a是第一个子元素，才能被选中，如果是别的就不能 */
+        nav a:first-child {
+            color: red;
+        }
+
+        /* 选中第一个类型是a的元素 */
+        a:first-of-type {
+            color: red;
+        }
+        /* 必须是最后一个元素，必须是a元素 */
+        a:last-child{
+            background: red;
+        }
+        /* 选中最后一个是a元素的 */
+        a:last-of-type{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <p>dddd</p>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+            <a href="">9</a>
+            <a href="">10</a>
+        </nav>
+    </div>
+</body>
+
+</html>

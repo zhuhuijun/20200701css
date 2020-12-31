@@ -1,0 +1,104 @@
+body {
+    background: url("../img/hh.jpg") no-repeat center top/100%;
+}
+
+.header {
+    width: 1198px;
+    height: 73px;
+    line-height: 73px;
+    color: #f8b700;
+    margin: 0 auto;
+    margin-top: 45px;
+    background: rgb(68, 47, 38);
+    border: 1px solid #2c1e23;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+.header nav a {
+    float: left;
+    width: 161px;
+    height: 73px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #2c1e23;
+    border-top: none;
+    border-bottom: none;
+}
+
+.header nav a:nth-child(3) {
+    margin-right: 232px;
+}
+
+.header .logo {
+    position: absolute;
+    width: 300px;
+    height: 118px;
+    background: url('../img/logo1.png') no-repeat;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -20px;
+}
+
+.header .logo h1 {
+    display: none;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 230px;
+}
+
+.menu a {
+    display: inline-block;
+    width: 363px;
+    height: 85px;
+    background: url('../img/btns.png') no-repeat;
+    margin-right: 20px;
+}
+
+.menu a span {
+    display: none;
+}
+
+.menu a.download {
+    background-position: -393px 0;
+}
+
+.advs {
+    width: 1203px;
+    margin: 76px auto;
+}
+
+.advs .item {
+    float: left;
+    width: 290px;
+    height: 200px;
+    margin-right: 13px;
+    outline: 1px solid #3f2a22;
+}
+
+.advs .item:last-child {
+    margin-right: 0;
+}
+
+.advs .item .title {
+    height: 50px;
+    text-align: center;
+    background: #211510;
+    line-height: 50px;
+    color: #f8b700;
+    border-bottom: 1px solid #3f2a22;
+    box-sizing: border-box;
+}
+
+.advs .item .img {
+    height: 150px;
+}
+
+.advs .item .img img {
+    height: 150px;
+    width: 290px;
+}
