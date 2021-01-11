@@ -1,0 +1,225 @@
+@charset "utf-8";
+.form {
+    width: 982px;
+    margin: 1em auto;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.form a {
+    color: #00a1d6;
+}
+
+.form h2 {
+    height: 30px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.form h2 span {
+    background: #fff;
+    padding: 0 20px;
+}
+
+.form .form-area {
+    width: 423px;
+    margin: 0 auto;
+}
+
+.form .form-area .form-item {
+    margin: 40px 0;
+    position: relative;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #dcdfe6;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-indent: 1em;
+    font-size: 14px;
+    color: #606266;
+    font-family: "PingFangSC-Medium";
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #c0c4cc;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #dcdfe6;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00a1d6;
+    outline: 0;
+}
+
+.form .form-area .form-item .selected .select-item, .form .form-area .form-item .selected .input {
+    float: left;
+    height: 40px;
+}
+
+.form .form-area .form-item .selected .select-item {
+    width: 140px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    border-right: 0;
+    position: relative;
+}
+
+.form .form-area .form-item .selected .input input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form .form-area .form-item .selected .select-item .title {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #909399;
+    cursor: pointer;
+}
+
+.form .form-area .form-item .selected .input {
+    width: 283px;
+}
+
+.form .form-area .form-item .selected .select-item ul {
+    max-height: 256px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    color: #606266;
+    padding: 10px 0;
+    font-size: 14px;
+    overflow-y: auto;
+    display: none;
+}
+
+.form .form-area .form-item .selected .select-item ul li {
+    height: 34px;
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 34px;
+}
+
+.form .form-area .form-item .selected .select-item ul li:hover {
+    background: #f5f7fa;
+}
+
+.form .form-area .form-item .selected .select-item ul li.selected {
+    color: #00a1d6;
+    font-weight: bold;
+}
+
+.form .form-area .form-item .btn-sncode {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form .form-area .readme {
+    margin: -30px 0;
+    font-size: 12px;
+}
+
+.form-area .readme .checkbox {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: -2px;
+}
+
+.form-area .readme input[type="checkbox"] {
+    display: none;
+}
+
+.form-area .readme input[type="checkbox"]:checked+.checkbox {
+    border-color: #00a1d6;
+}
+
+.form-area .readme input[type="checkbox"]:checked+.checkbox::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    box-sizing: border-box;
+    background: #00a1d6;
+    border-radius: 2px;
+    margin-top: 2.5px;
+    margin-left: 2.5px;
+}
+
+button {
+    border: none;
+    height: 40px;
+    background: #00a1d6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #33b4de;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button.fill {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:disabled {
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+
+.tip {
+    text-align: right;
+}
+
+.form-area .form-item.haserror input {
+    border-color: #f45d90;
+}
+
+.form-area .form-item.haserror .error {
+    display: block;
+}
+
+.form-area .form-item .error {
+    color: #f45d90;
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    right: -245px;
+    font-size: 12px;
+    display: none;
+}

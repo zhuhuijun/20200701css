@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 图片的父元素是一个块盒，块盒高度是自动的 ，图片底部和父元素的底部会出现白边
+        **1、设置父元素的字体大小为0
+        **2、图片为块盒
+        */
+        .dog{
+            border: 1px solid red;
+            height: 400px;
+        }
+        .dog img{
+            display: block;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="dog">
+        <img src="./tt.jpg" alt="">
+    </div>
+</body>
+</html>
