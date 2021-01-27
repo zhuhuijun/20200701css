@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <base target="_blank">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" > -->
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .layer {
+            width: 1190px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .search-area {
+            height: 40px;
+            width: 630px;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        .search-area .search-box {
+            width: 554px;
+            height: 40px;
+            box-sizing: border-box;
+            background: #fff;
+            position: relative;
+            border: 2px solid #ff5000;
+            border-radius: 20px 0 0 20px;
+            border-right: none;
+            overflow: hidden;
+        }
+
+        .search-area .search-box .placeholder {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .search-area .search-box input {
+            width: 490px;
+            height: 36px;
+            line-height: 36px;
+            outline: none;
+            border: none;
+            text-indent: 10px;
+            background-color: transparent;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .search-area .search-box .placeholder span {
+            color: #9c9c9c;
+            vertical-align: 2px;
+        }
+
+        .search-area .search-btn button {
+            width: 74px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            outline: none;
+            background-image: linear-gradient(to right, #ff9000, #ff5000);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+        .menu-nav {
+            margin-top: 30px;
+        }
+
+        .menu-nav ul {
+            height: 30px;
+            background-image: linear-gradient(to right, #ff9000, #ff5000);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+        }
+
+        .menu-nav ul li {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 7px;
+            padding: 0 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .menu-nav ul li.liner {
+            margin: 0;
+        }
+
+        .menu-nav ul li.b {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layer search-area clearfix">
+        <form action="">
+            <div class="search-box fl">
+                <input type="text">
+                <div class="placeholder">
+                    <span>网红裤腰带 国际荡 洋气 9.9包邮</span>
+                </div>
+            </div>
+            <div class="search-btn fl">
+                <button type="button">搜索</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="menu-nav layer">
+        <ul class="menu clearfix">
+            <li class="b"><a href="">天猫</a></li>
+            <li class="b"><a href="">聚划算</a></li>
+            <li class="b"><a href="">天猫超市</a></li>
+            <li class="liner">|</li>
+            <li><a href="">淘抢购</a></li>
+            <li><a href="">电器城</a></li>
+            <li><a href="">司法拍卖</a></li>
+            <li><a href="">淘宝心选</a></li>
+            <li><a href="">兴农扶贫</a></li>
+            <li class="liner">|</li>
+            <li><a href="">飞猪旅行</a></li>
+            <li><a href="">智能生活</a></li>
+            <li><a href="">苏宁易购</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
