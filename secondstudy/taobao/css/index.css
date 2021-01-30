@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "common.css";
-@import "//at.alicdn.com/t/font_2334643_64kjayi2dn8.css";
+@import "//at.alicdn.com/t/font_2334643_3bd1chbkdhx.css";
 /* 
 @font-face {
     font-family: 'iconfont';
@@ -708,4 +708,336 @@
     font-size: 12px;
     position: relative;
     left: 30px;
+}
+
+/* 公告区 */
+
+.firstScreen .first-right .notice {
+    height: 108px;
+    background: #fff;
+}
+
+.firstScreen .first-right .notice .title {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+.firstScreen .first-right .notice .title li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+
+.firstScreen .first-right .notice .title li.active {
+    border-bottom: 2px solid #f40;
+    font-weight: bold;
+}
+
+.firstScreen .first-right .notice .title li a:hover {
+    color: #f40;
+}
+
+.firstScreen .first-right .notice .content {
+    margin: 0 12px;
+    padding-top: 10px;
+}
+
+.firstScreen .first-right .notice .content li {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    width: 130px;
+    white-space: nowrap;
+}
+
+.firstScreen .first-right .notice .content .item {
+    width: 100%;
+}
+
+.firstScreen .first-right .notice .content .item a {
+    color: #ff5000;
+}
+
+.firstScreen .first-right .notice .content li a:hover {
+    color: #ff5000;
+}
+
+/* 图标区域 */
+
+.first-right .icon-area {
+    width: 100%;
+    height: 231px;
+    background-color: #fff;
+    table-layout: fixed;
+    /*根据表格的宽度自动计算*/
+}
+
+.first-right .icon-area td {
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.first-right .icon-area td span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0px auto;
+    background-image: url('../images/cccc.png');
+    background-repeat: no-repeat;
+}
+
+.first-right .icon-area td i {
+    line-height: 34px;
+    color: #333;
+}
+
+.first-right .icon-area .item1 span {
+    background-position: 0 0;
+}
+
+.first-right .icon-area .item2 span {
+    background-position: 0 -87px;
+}
+
+.first-right .icon-area .item3 span {
+    background-position: 0 -44px;
+}
+
+.first-right .icon-area .item4 span {
+    background-position: 0 -132px;
+}
+
+.first-right .app {
+    height: 111px;
+    background: #fff;
+}
+
+.first-right .app .title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.first-right .app .title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 13px;
+}
+
+.first-right .app .title a {
+    margin-right: 10px;
+    color: #999;
+}
+
+.first-right .app .title a:hover {
+    color: #f40;
+}
+
+.first-right .app .app-icon {
+    text-align: center;
+    font-size: 0;
+}
+
+.first-right .app .app-icon li {
+    display: inline-block;
+    margin: 0 10px 8px 10px;
+}
+
+.first-right .app .app-icon li img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+/* 有好货 */
+
+.goods {
+    width: 590px;
+    height: 685px;
+    background-color: #fff;
+}
+
+.goods .head {
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.goods .head h3 {
+    font-size: 0;
+    font-weight: normal;
+}
+
+.goods .head h3 img {
+    height: 24px;
+}
+
+.goods .head h3 span {
+    font-size: 20px;
+    vertical-align: middle;
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.goods .head h3 i {
+    font-size: 12px;
+    color: #999;
+    vertical-align: middle;
+}
+
+.goods .head .change {
+    color: #999;
+}
+
+.goods .list {
+    font-size: 0;
+    text-align: center;
+}
+
+.goods .list li {
+    width: 180px;
+    display: inline-block;
+    margin: 0 2px 35px 2px;
+}
+
+.goods .list li img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+.goods .list li h4 {
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.goods .list li h4 a:hover {
+    color: #f40;
+}
+
+.goods .list li .text {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+.goods .list li .comment {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 12;
+    text-align: left;
+    font-size: 12px;
+    color: #35b1ff;
+}
+
+.goods .list li .comment span {
+    font-size: 14px;
+}
+
+.shopping .list li .text {
+    height: 44px;
+    line-height: 22px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: initial;
+    margin-top: 11px;
+}
+
+.shopping .list li .text span {
+    font-size: 14px;
+    color: #ebebeb;
+}
+
+.shopping .list li .text a:hover {
+    color: #f40;
+}
+
+.shopping .list li .comment {
+    color: #999;
+}
+
+.shopping .list li .comment i {
+    vertical-align: -1px;
+}
+
+.shopping .list li .comment img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 0;
+}
+
+.tool {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    width: 50px;
+    height: 350px;
+    /* border: 1px solid #f00; */
+}
+
+.tool span {
+    position: absolute;
+    font-size: 32px;
+    color: #ff7f13;
+    width: 50px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    top: -28px;
+}
+
+.tool .btns {
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tool .btns a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    word-break: keep-all;
+    box-sizing: border-box;
+    padding-top: 6px;
+    text-align: center;
+    position: relative;
+}
+
+.tool .btns a.active, .tool .btns a:hover {
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #ff9000, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+.tool .btns a.active:after, .tool .btns a:hover:after {
+    border: none;
+}
+.tool .btns a:after {
+    content: "";
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+}
+
+.tool .btns a.item5 {
+    line-height: 40px;
 }
