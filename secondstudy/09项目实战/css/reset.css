@@ -56,3 +56,18 @@ a{
 	display: block;
 	clear: both;
 }
+/* 重置文本框 */
+input{
+	border: none;
+	outline: none;
+	outline-offset: 0;
+}
+/* 重置按钮 */
+button{
+	border: none;
+	outline: none;
+	outline-offset: 0;
+	background: initial;
+	padding: 0;
+	color: #c3c3c3;
+}

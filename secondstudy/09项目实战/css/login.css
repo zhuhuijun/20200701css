@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import 'reset.css';
+@import 'common.css';
+@import "//at.alicdn.com/t/font_2220160_2w5kvtt5vpi.css";
+/* 统一设置开始 */
+
+a {
+    color: #41ac52;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+input[type='text'].more-text-indent {
+    padding-left: 65px;
+}
+
+/* 统一设置结束 */
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    line-height: 2;
+    padding: 10px;
+    padding-top: 30px;
+    /* box-sizing: border-box; */
+    color: #9b9b9b;
+}
+
+.container .login .switch-menu {
+    font-size: 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.container .login .switch-menu span {
+    font-size: 13px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.container .login .switch-menu span.selected {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+
+.container .login .form .form-item {
+    margin: 10px 0;
+    position: relative;
+}
+
+.container .login .form .form-item .txt {
+    font-size: 12px;
+}
+
+.container .login .form .form-item .country-code .selected {
+    width: 51px;
+    height: 26px;
+    line-height: 26px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    border-right: 1px solid #e4e6e5;
+    cursor: pointer;
+}

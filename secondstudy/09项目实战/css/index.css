@@ -1,3 +1,119 @@
 @charset "utf-8";
 @import "common.css";
 @import "//at.alicdn.com/t/font_2220160_2w5kvtt5vpi.css";
+/* 页面通用样式 */
+
+button {
+    cursor: pointer;
+}
+
+/* 页头开始 */
+
+.header {
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+/* .header .logo.header .search, .header .menu {
+    border: 1px solid red;
+    height: 30px;
+} */
+
+/* 
+/* 以图换字 */
+
+.header .logo a {
+    width: 154px;
+    height: 30px;
+    display: block;
+    background: url('../img/logo.png') no-repeat left top/100%;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+/* .header .logo a {
+    width: 154px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    display: block;
+    background: url('../img/logo.png') no-repeat;
+} */
+
+.header .search {
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    margin-left: 20px;
+    position: relative;
+}
+
+.header .search .txt {
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    font-style: 13px;
+    text-indent: 10px;
+}
+
+.header .search .txt::placeholder {
+    color: #ccc;
+}
+
+.header .search button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0px;
+}
+
+/* 页头-菜单的功能开始 */
+
+.header .menu {
+    margin-top: 7px;
+}
+
+.header .menu a {
+    background: url('../img/menu2.png') no-repeat left top/463px 20px;
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 20px;
+}
+
+.header .menu .lk-read {
+    background-position: 0 0;
+}
+
+.header .menu .lk-movie {
+    background-position: -60px 0;
+}
+
+.header .menu .lk-music {
+    background-position: -120px 0;
+}
+
+.header .menu .lk-group {
+    background-position: -180px 0;
+}
+
+.header .menu .lk-city {
+    background-position: -300px 0;
+}
+
+.header .menu .lk-fm {
+    background-position: -240px 0;
+}
+.header .menu .lk-time {
+    background-position: -360px 0;
+}
+
+.header .menu .lk-doupin {
+    background-position: -420px 0;
+    width: 44px;
+}
+
+/* 页头-菜单的功能结束 */
+/* 页头结束 */
