@@ -78,3 +78,73 @@ input[type='text'].more-text-indent {
     border-right: 1px solid #e4e6e5;
     cursor: pointer;
 }
+
+.container .login .form .form-item .country-code .choose-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(255, 255, 255, .5);
+    z-index: 1;
+}
+
+.container .login .form .form-item .country-code .choose-area .center {
+    width: 285px;
+    height: 225px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    cursor: initial;
+    overflow: hidden;
+}
+
+.container .login .form .form-item .country-code .choose-area .center .title {
+    height: 42px;
+    line-height: 42px;
+    background: #ebf5eb;
+    text-align: left;
+    padding-left: 10px;
+    color: #060;
+    cursor: auto;
+    font-weight: bold;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul {
+    height: 180px;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul li {
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul li:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul li .fr {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul li.active {
+    color: #42bd56;
+}
+
+.container .login .form .form-item .country-code .choose-area .center ul li.active .fr{
+    color: #42bd56;
+}
