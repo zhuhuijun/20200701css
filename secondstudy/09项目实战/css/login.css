@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import 'reset.css';
 @import 'common.css';
-@import "//at.alicdn.com/t/font_2220160_2w5kvtt5vpi.css";
 /* 统一设置开始 */
 
 a {
@@ -31,8 +30,9 @@ input[type='text'].more-text-indent {
     line-height: 2;
     padding: 10px;
     padding-top: 30px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     color: #9b9b9b;
+    position: relative;
 }
 
 .container .login .switch-menu {
@@ -42,7 +42,7 @@ input[type='text'].more-text-indent {
 
 .container .login .switch-menu span {
     font-size: 13px;
-    width: 150px;
+    width: 50%;
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
@@ -58,6 +58,7 @@ input[type='text'].more-text-indent {
 .container .login .form .form-item {
     margin: 10px 0;
     position: relative;
+    font-size: 13px;
 }
 
 .container .login .form .form-item .txt {
@@ -130,6 +131,7 @@ input[type='text'].more-text-indent {
     height: 38px;
     line-height: 38px;
     border-top: 1px solid #e5e5e5;
+    cursor: pointer;
 }
 
 .container .login .form .form-item .country-code .choose-area .center ul li:last-child {
@@ -145,6 +147,135 @@ input[type='text'].more-text-indent {
     color: #42bd56;
 }
 
-.container .login .form .form-item .country-code .choose-area .center ul li.active .fr{
-    color: #42bd56;
+.container .login .form .form-item .country-code .choose-area .center ul li.active .fr {
+    color: inherit;
 }
+
+.container .login .form .form-item .country-code .choose-area .center ul li.active .iconfont {
+    margin-left: 10px;
+}
+
+/* 获取验证码 */
+
+.container .login .form .form-item .ab-right {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+.container .login .form .form-item button {
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+}
+
+.container .login .form .form-item.tip {
+    font-size: 12px;
+    color: #333;
+}
+
+.container .login .form .form-item.tip input[type='checkbox'] {
+    vertical-align: -2px;
+}
+
+.container .login .bottom {
+    border-top: 1px solid #ddd;
+}
+
+.container .login .bottom .msg {
+    font-size: 11px;
+    vertical-align: 2px;
+}
+
+.container .login .bottom .iconfont {
+    margin-left: 12px;
+}
+
+.container .login .bottom .iconfont.iconweixin {
+    color: #34950e;
+}
+
+.container .login .bottom .iconfont.iconweibo11 {
+    color: #EA5D5C;
+}
+
+/* 二维码登录开始 */
+
+.container .qrcode {
+    font-size: 13px;
+}
+
+.container .qrcode .title {
+    color: #333;
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+}
+
+.container .qrcode .code {
+    text-align: center;
+    font-size: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container .qrcode .code img {
+    width: 170px;
+    height: 170px;
+}
+
+.container .qrcode .tip {
+    width: 183px;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(0, 0, 0, .08);
+    color: #494949;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* 二维码登录结束 */
+
+/* 切换的样式开始*/
+
+.container .change {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 5px;
+}
+
+.container .change .icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.container .change .icon.icon-qrcode {
+    background: url('../img/qr1.png') no-repeat left top/100% 100%;
+}
+
+.container .change .icon.icon-pc {
+    background: url('../img/qr2.png') no-repeat left top/100% 100%;
+}
+
+.container .pointer {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #666;
+    border: 1px solid rgba(66, 189, 86, .3);
+    background-color: #f5faf9;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+.container .change:hover+.pointer {
+    display: block;
+}
+
+/* 切换的样式结束*/

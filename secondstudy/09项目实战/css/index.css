@@ -1,12 +1,23 @@
 @charset "utf-8";
 @import "common.css";
-@import "//at.alicdn.com/t/font_2220160_2w5kvtt5vpi.css";
+@import "banner.css";
 /* 页面通用样式 */
+
+body{
+    line-height: 2;
+}
 
 button {
     cursor: pointer;
 }
 
+.section{
+    padding: 35px 0;
+}
+/* 在父亲元素下看看这个元素的位置是几个 */
+.section:nth-child(even){
+    background-color:#f7f7f7 ;
+}
 /* 页头开始 */
 
 .header {
@@ -47,6 +58,7 @@ button {
     border: 1px solid #c3c3c3;
     margin-left: 20px;
     position: relative;
+    line-height: 1;
 }
 
 .header .search .txt {

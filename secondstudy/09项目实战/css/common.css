@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "//at.alicdn.com/t/font_2220160_2w5kvtt5vpi.css";
 .container {
     width: 950px;
     margin: 0 auto;
@@ -16,4 +17,35 @@
     content: '';
     display: block;
     clear: both;
+}
+.hidden{
+    display: none;
+}
+
+.btn{
+    background: #41ac52;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background: rgba(66, 189, 86, .5);
+}
+
+.aside-left{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+.aside-right{
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+.main{
+    /* 创建独立的bfc */
+    overflow: hidden;
 }
