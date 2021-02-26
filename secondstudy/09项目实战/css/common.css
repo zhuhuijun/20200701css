@@ -18,11 +18,12 @@
     display: block;
     clear: both;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
-.btn{
+.btn {
     background: #41ac52;
     color: #fff;
     text-align: center;
@@ -30,22 +31,68 @@
     border-radius: 4px;
 }
 
-.btn:disabled{
+.btn:disabled {
     cursor: not-allowed;
     background: rgba(66, 189, 86, .5);
 }
 
-.aside-left{
+.aside-left {
     float: left;
     width: 100px;
     margin-right: 20px;
 }
-.aside-right{
+
+.aside-right {
     float: right;
     width: 265px;
     margin-left: 30px;
 }
-.main{
+
+.main {
     /* 创建独立的bfc */
     overflow: hidden;
+}
+
+.adv img {
+    width: 100%;
+    display: block;
+}
+
+.section-title {
+    margin: 12px 0;
+}
+
+.section-title .title {
+    display: inline-block;
+    color: #072;
+    font-size: 15px;
+}
+
+.section-title .title::after {
+    content: " · · · · · · ";
+}
+
+.section-title .link {
+    font-size: 12px;
+}
+
+.section-title .link::before {
+    content: "(";
+}
+
+.section-title .link::after {
+    content: ")";
+}
+
+.adv-tag::after {
+    content: "广告";
+    color: #c9c9c9;
+    font-size: 12px;
+}
+
+.aside-left .title{
+    font-size: 24px;
+}
+.dark-color{
+    color: #494949;
 }
