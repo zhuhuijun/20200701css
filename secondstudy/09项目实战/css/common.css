@@ -96,3 +96,13 @@
 .dark-color{
     color: #494949;
 }
+
+.item-list li{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+}
+.item-list li .img img{
+    display: block;
+    width: 100%;
+}

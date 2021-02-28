@@ -1,0 +1,16 @@
+@charset "utf-8";
+.left-menu {
+    font-size: 14px;
+}
+.left-menu a{
+    position: relative;
+}
+.left-menu a.new::after{
+    content: "";
+    background-image: url("../img/new_menu.gif");
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    right: -20px;
+    top: 4px;
+}

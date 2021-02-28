@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "common.css";
 @import "banner.css";
+@import "movie.css";
 /* 页面通用样式 */
 
 body {
@@ -264,3 +265,43 @@ a:active {
 }
 
 /* 豆瓣时间结束 */
+
+/* 豆瓣视频开始 */
+.video-main .section-title a:hover{
+    background-color: initial;
+}
+.video-main ul{
+    font-size: 0;
+}
+.video-main li{
+    width: 250px;
+    display: inline-block;
+    margin-right: 30px;
+    line-height: 1.5;
+    vertical-align: top;
+}
+.video-main li:nth-of-type(3n){
+    margin-right: 0;
+}
+.video-main li .img{
+    position: relative;
+}
+.video-main li .img img{
+    width: 100%;
+    display: block;
+}
+.video-main li .words{
+    font-size: 13px;
+    line-height: 1.5;
+}
+.video-main li .img::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+    text-align: center;
+    line-height: 144px;
+    font-size: 35px;
+}
+/* 豆瓣视频结束 */
