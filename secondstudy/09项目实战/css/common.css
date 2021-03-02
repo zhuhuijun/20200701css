@@ -106,3 +106,22 @@
     display: block;
     width: 100%;
 }
+
+/* 星 */
+
+.star-bg {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background: url('../img/rating.png') no-repeat left top/100%;
+}
+.star50{
+    background-position: 0 0;
+}
+.star45{
+    background-position: 0 -11px;
+}
+
+.star40{
+    background-position: 0 -22px;
+}

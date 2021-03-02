@@ -2,10 +2,12 @@
 .left-menu {
     font-size: 14px;
 }
-.left-menu a{
+
+.left-menu a {
     position: relative;
 }
-.left-menu a.new::after{
+
+.left-menu a.new::after {
     content: "";
     background-image: url("../img/new_menu.gif");
     width: 17px;
@@ -13,4 +15,66 @@
     position: absolute;
     right: -20px;
     top: 4px;
+}
+
+.right-menu-list li {
+    float: left;
+    font-size: 12px;
+}
+
+.movie-area .right-menu-list li {
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.movie-area .order-movie-list {
+    font-size: 12px;
+}
+
+.movie-area .order-movie-list li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 6px;
+}
+
+.movie-area .order-movie-list li a {
+    margin-left: 5px;
+}
+
+.movie-area .item-list {
+    font-size: 0;
+}
+
+.movie-area .item-list li {
+    width: 100px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+}
+
+.movie-area .item-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.movie-area .item-list li .words {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.movie-area .item-list li .words a {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.star .number {
+    font-size: 12px;
+    margin-left: 7px;
+    color: #e09015;
 }
