@@ -62,7 +62,7 @@
     font-size: 13px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .movie-area .item-list li .words a {
@@ -77,4 +77,15 @@
     font-size: 12px;
     margin-left: 7px;
     color: #e09015;
+}
+.movie-area .func{
+    margin-top: 7px;
+}
+.movie-area .func .block-link{
+    background-color: #1c8bd0;
+    color: #fff;
+}
+
+.movie-area .func .block-link:hover{
+    background: #047fcb;
 }

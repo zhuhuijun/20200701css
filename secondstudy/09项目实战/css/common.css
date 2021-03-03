@@ -125,3 +125,10 @@
 .star40{
     background-position: 0 -22px;
 }
+
+.block-link{
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
