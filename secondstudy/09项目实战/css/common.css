@@ -90,19 +90,21 @@
     font-size: 12px;
 }
 
-.aside-left .title{
+.aside-left .title {
     font-size: 24px;
 }
-.dark-color{
+
+.dark-color {
     color: #494949;
 }
 
-.item-list li{
+.item-list li {
     display: inline-block;
     vertical-align: top;
     line-height: 1.5;
 }
-.item-list li .img img{
+
+.item-list li .img img {
     display: block;
     width: 100%;
 }
@@ -115,20 +117,55 @@
     height: 11px;
     background: url('../img/rating.png') no-repeat left top/100%;
 }
-.star50{
+
+.star50 {
     background-position: 0 0;
 }
-.star45{
+
+.star45 {
     background-position: 0 -11px;
 }
 
-.star40{
+.star40 {
     background-position: 0 -22px;
 }
 
-.block-link{
+.block-link {
     padding: 2px 10px;
     font-size: 12px;
     border-radius: 3px;
     display: inline-block;
+}
+
+.menu-adv {
+    margin-top: 15px;
+    font-size: 12px;
+}
+.app-icon-1 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url('../img/app_icons.jpg') no-repeat;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.app-icon-2 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url('../img/app_icons.jpg') no-repeat;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background-position: -250px 0;
+}
+
+.app-icon-3 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url('../img/app_icons.jpg') no-repeat;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background-position: -50px 0;
 }
